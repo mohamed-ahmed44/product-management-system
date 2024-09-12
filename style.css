@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+}
+
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 4px;
+    margin: 4px 0;
+    background-color: #111;
+}
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    padding: 5px 2px;
+    background-color:#d0020f ;
+    border-radius: 4px;
+}
+#total::before{   
+    content: 'total:';
+}
+#deleteAll{
+    margin: 10px 0;
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #390053;
+    color: white;
+    border-radius: 20px;
+    transition: .5s;
+}
+button:hover{
+    background-color: #51025f;
+    letter-spacing: 1px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
+/*
+for (let i = 0; i < dataPro.length; i++) {
+        if (dataPro[i].title.includes(value.toLowerCase())) {
+            table +=`
+        <tr>
+            <td>${i}</td>
+            <td>${dataPro[i].title}</td>
+            <td>${dataPro[i].price}</td>
+            <td>${dataPro[i].taxes}</td>
+            <td>${dataPro[i].ads}</td>
+            <td>${dataPro[i].discount}</td>
+            <td>${dataPro[i].total}</td>
+            <td>${dataPro[i].category}</td>
+            <td><button onclick='updateData(${i})' id="udate">update</button></td>
+            <td><button onclick='deleteData(${i})' id="udate">delete</button></td>
+        </tr>
+        `
+        }
+        
+    }
+*/
